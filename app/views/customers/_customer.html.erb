@@ -1,0 +1,13 @@
+<div class="card" style="width: 18rem;">
+  <% if customer.image.attached? %>
+    <%= image_tag(customer.image, class: "card-img-top") %>
+  <% else %>
+    <img src="placeholder-image-url" class="card-img-top" alt="No image available">
+  <% end %>
+  <div class="card-body">
+    <h5 class="card-title"><%= customer.full_name %></h5>
+    <p class="card-text"><%= customer.phone_number %></p>
+    <p class="card-text"><%= customer.email_address %></p>
+    <p class="card-text"><%= customer.notes %></p>
+  </div>
+</div>
