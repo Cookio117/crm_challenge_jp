@@ -1,0 +1,6 @@
+<h1>All Customers</h1>
+<%= link_to 'Missing Email', customers_missing_email_path %>
+<%= link_to 'Alphabetalized', customers_alphabetalized_path %>
+
+<%= render partial: "customers/customer", collection: @customers %>
+

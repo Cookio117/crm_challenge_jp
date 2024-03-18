@@ -3,8 +3,8 @@ class CustomersController < ApplicationController
     @customers = Customer.all
   end
 
-  def alphabetized
-    @customers = Customer.order(:full_name)
+  def alphabetalized
+    @customers = Customer.order(full_name: :asc)
   end
 
   def missing_email
